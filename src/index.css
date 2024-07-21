@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  box-sizing: border-box;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0D0D0D;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nft .swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@font-face {
+  font-family: "Lato";
+  src:
+    local("LatoRegular"),
+    url("assets/fonts/Lato/Lato-Regular.ttf")
+      format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Lato";
+  src:
+    local("LatoMedium"),
+    url("assets/fonts/Lato/Lato-Regular.ttf")
+      format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Lato";
+  src:
+    local("LatoLight"),
+    url("assets/fonts/Lato/Lato-Light.ttf")
+      format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Lato";
+  src:
+    local("LatoMedium"),
+    url("assets/fonts/Lato/Lato-Bold.ttf")
+      format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Lato";
+  src:
+    local("LatoSemiBold"),
+    url("assets/fonts/Lato/Lato-SemiBold.ttf")
+      format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Lato";
+  src:
+    local("LatoExtraBold"),
+    url("assets/fonts/Lato/Lato-ExtraBold.ttf")
+      format("truetype");
+  font-weight: 800;
+}
+
+
+@font-face {
+  font-family: "Montserrat";
+  src:
+    local("MontserratBlack"),
+    url("assets/fonts/Montserrat/Montserrat-Black.ttf")
+      format("truetype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src:
+    local("MontserratBold"),
+    url("assets/fonts/Montserrat/Montserrat-Bold.ttf")
+      format("truetype");
+  font-weight: 700;
+}
+
+.join-us input:focus-visible {
+  outline: none;  
+  background: linear-gradient(#000 0 0) padding-box, /*this is your grey background*/ linear-gradient(to right, #1882CF, #1882CF) border-box;
+}
+
+.join-us input{
+  color: #999999;
+  border-radius: 25px;
+  background: linear-gradient(#000 0 0) padding-box, /*this is your grey background*/ linear-gradient(to right, #1882CF, #7B2375) border-box;
+  color: #ffffffde;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  display: inline-block;
+ }
+
+ .invalid-input {
+  border-color: red;
+  animation: shake 0.5s ease-in-out;
+}
+
+.join-us button {
+  background: linear-gradient(to right, #1882CF, #7B2375);
+}
+
+
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+
+@keyframes slideAndFade {
+  0% {
+    transform: translate3d(0px, 0px, 0px) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(-20px, 51px, 380px) scale(0.5);
+    opacity: 0;
+  }
+}
+@keyframes slideAndFade2 {
+  0% {
+    transform: translate3d(0px, 0px, 0px) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(31px, 33px, 380px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.9);
+    opacity: 0;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(275deg, #FBDBE5 0%, #D4ADFF 47%, #DDE1FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: calc(20px + 4 * (100vw /1280));
+}
+
+.number {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  width: 73px;
+    height: 44px;
+  opacity: 1;
+  animation: slideAndFade 1.9s linear infinite;
+  animation-delay: 1.1s;
+}
+
+.number2 {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  width: 73px;
+    height: 44px;
+  opacity: 1;
+  animation: slideAndFade2 1.9s linear infinite;
+  animation-delay: 2.1s;
+}
+
+.number3 {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  opacity: 1;
+  animation: slideAndFade 1.8s linear infinite;
+}
