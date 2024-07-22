@@ -5,7 +5,7 @@ import { ScaleAnimation } from "@/components/ScaleAnimation";
 
 export const GameFiApp = () => {
     return (
-        <section className="flex flex-col gap-20 items-center max-w-[1084px] justify-center mx-auto">
+        <section className="flex flex-col md:py-40 py-16 md:gap-20 items-center max-w-[1084px] justify-center mx-auto">
 
             <h2 className="font-lato font-black text-[44px] text-pink-regular  pb-8 max-w-[720px] text-center">2,000,000+ users in the Telegram GameFi App</h2>
             <div className="flex flex-col md:flex-row items-center max-w-[665px] md:pl-[52px] gap-4 md:gap-[110px]">

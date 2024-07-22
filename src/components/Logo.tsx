@@ -10,15 +10,15 @@ interface Props {
 
 export const Logo : FC<Props> = ({ type }) => {
   return (
-    <section className="w-fit flex items-center gap-3">
+    <section className="w-fit flex md:self-start md:items-center gap-3">
       <img src={type === 'header' ? header_logo : footer_logo} alt="" className={cn(
           'w-[50px]',
           {
-            'h-[50px]': type === 'header',
+            'h-[50px] self-start': type === 'header',
             'h-[58px]': type === 'footer'
           }
         )}/>  
-      <p className="font-neue font-extrabold text-2xl text-white tracking-wide">OrbitonX</p>
+      <p className="font-neue font-extrabold flex items-center text-2xl text-white tracking-wide">OrbitonX</p>
     </section>
   );
 };

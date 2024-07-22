@@ -46,7 +46,7 @@ export const PlatformPartners = () => {
         <section className='max-w-[1084px] md:mx-auto mx-7'>
             <h2 className='font-mont font-bold text-pink-regular text-adptive-xl pt-10'>Why NFT Owners are<br />platform partners?</h2>
             <div className='max-w-[785px] flex-col md:flex-row flex mx-auto '>
-                <img src={astronaut} className='sm:max-w-[454px] sm:max-h-[518px] ' alt="" />
+                <img src={astronaut} className='sm:max-w-[454px] sm:mx-auto sm:max-h-[518px] ' alt="" />
                 <div className='flex gap-10 flex-col justify-center pt-8'>
                     {List.map((item: ListItem) => (
                         <div className='flex gap-4 items-center'>

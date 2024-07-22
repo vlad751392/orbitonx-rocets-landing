@@ -94,7 +94,7 @@ export const Nft = () => {
     return (
         <section className='nft max-w-[1084px] mx-auto'>
             <h2 className='font-mont font-black text-pink-regular text-3xl md:text-[44px] pt-10'>Buy NFT become a leader of degen game with degen community!</h2>
-            <p className='py-10 font-lato'>NFTs Properties:</p>
+            <p className='py-10 text-2xl gradient-text font-lato'>NFTs Properties:</p>
             <Swiper
                 modules={[FreeMode, Autoplay]}
                 autoplay={{
@@ -114,8 +114,9 @@ export const Nft = () => {
                         freeMode: true
                     },
                     768: {
-                        slidesPerView: 2,
-                        spaceBetween: 20
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                        freeMode: true
                     },
                     1024: {
                         slidesPerView: 4,

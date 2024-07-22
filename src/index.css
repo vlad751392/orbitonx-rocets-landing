@@ -135,7 +135,9 @@
   background: linear-gradient(to right, #FA00FF, #FFC700);
 }
 
-
+header button {
+  background: linear-gradient(to right, #FA00FF, #FFC700);
+}
 
 @keyframes shake {
   0% { transform: translateX(0); }
@@ -367,15 +369,17 @@
 }
 
 .marquee {
-  width: 100%;
+  width: 600px;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  top: 140px;
+
+    transform: rotate(45deg);
 }
 
 .marquee-text {
   display: inline-block;
   white-space: nowrap;
-  padding-left: 100%; /* Начальное положение строки */
   animation: marquee 10s linear infinite;
 }
 
@@ -386,4 +390,23 @@
   100% {
       transform: translateX(-100%);
   }
+}
+
+.react-parallax {
+  position: absolute !important;
+  overflow:visible !important;
+  will-change: transform;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Adjust this value to control the height of the movement */
+  }
+}
+
+.rocket {
+  animation: moveUpDown infinite;
 }
