@@ -90,7 +90,7 @@ axios.post( `${strapiURL}/api/orbiton-users-emails`, data1, {
 
   return (
     
-    <section className="join-us mx-auto w-full sm:w-fit join-us flex items-center flex-col gap-6 mb-5 sm:mb-0">
+    <section className="join-us w-full sm:w-fit join-us flex items-center flex-col gap-6 mb-5 sm:mb-0">
 
       {/* <Modal
         isOpen={modalIsOpen}
@@ -107,7 +107,7 @@ axios.post( `${strapiURL}/api/orbiton-users-emails`, data1, {
           type="text"
           placeholder="e-mail"
           {...register("Email", { required: true, pattern: /^\S+@\S+$/i })}
-          className={cn("sm:w-[435px] w-[253px]", {
+          className={cn("md:w-[435px] w-[233px]", {
             "invalid-input": errors.Email && formSubmitted,
           })}
         />

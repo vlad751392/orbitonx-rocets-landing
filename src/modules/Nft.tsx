@@ -114,8 +114,8 @@ export const Nft = () => {
                         freeMode: true
                     },
                     768: {
-                        slidesPerView: 'auto',
-                        spaceBetween: 30,
+                        slidesPerView: 2,
+                        spaceBetween: 20
                     },
                     1024: {
                         slidesPerView: 4,

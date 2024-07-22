@@ -9,6 +9,25 @@ export default {
       backgroundColor: {
         'white-12': 'rgba(255, 255, 255, 0.12)',
       },
+      boxShadow: {
+        'custom-shadow-blue': '-1px -2px 30px 20px rgba(55, 61, 212, 0.5)',
+        'custom-shadow-blue-hover': '-1px -2px 40px 30px rgba(55, 61, 212, 0.7)',
+        'custom-shadow-pruple': '-1px -2px 40px 30px rgba(124, 55, 212, 0.5)',
+        'custom-shadow-orange': '-1px -2px 40px 30px rgba(255, 149, 1, 0.5)',
+        'custom-shadow-orange-hover': '-1px -2px 40px 30px rgba(255, 149, 1, 0.7)',
+        'custom-shadow-pruple-hover': '-1px -2px 40px 30px rgba(124, 55, 212, 0.7)',
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/src/assets/png/banner-bg.png')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
+      fontSize: {
+        "adptive-m": "calc(21px + 6 * (100vw /1280))",
+        "adptive-ml": "calc(29px + 10 * (100vw /1280))",
+        "adptive-l": "calc(16px + 16 * (100vw /1280))",
+        "adptive-2l": "calc(38px + 16 * (100vw /1280))",
+        "adptive-xl": "calc(36px + 12 * (100vw /1280))",
+      },
       backdropFilter: {
         'blur': 'blur(10px)',
       },

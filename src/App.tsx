@@ -9,22 +9,31 @@ import { Nft } from './modules/Nft';
 import { Banner } from './modules/Banner';
 import { Rockets } from './modules/Rockets';
 import { GameFiApp } from './modules/GameFiApp';
+import { Header } from './modules/layouts/Header';
+import { Footer } from './modules/layouts/Footer';
+import { StarLayer } from './modules/StarLayer';
+import { RunString } from './components/RunString';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-     {/* <AboutUs />
-         */}
-        
+    <>   
+      <div>
+          <StarLayer />
+      </div>
+      <RunString />
+    <Header />
         <Rockets />
         <GameFiApp />
+        <Nft />
         <GamingModes />
         
-        {/* <Nft /> */}
-        {/* <PlatformPartners /> */}
-        {/* <Banner /> */}
+        
+        <PlatformPartners />
+        <Banner />
+        <AboutUs />
+        <Footer />
     </>
   )
 }

@@ -41,7 +41,7 @@
   font-family: "Lato";
   src:
     local("LatoMedium"),
-    url("assets/fonts/Lato/Lato-Regular.ttf")
+    url("c/fonts/Lato/Lato-Regular.ttf")
       format("truetype");
   font-weight: 500;
 }
@@ -58,7 +58,7 @@
 @font-face {
   font-family: "Lato";
   src:
-    local("LatoMedium"),
+    local("LatoBold"),
     url("assets/fonts/Lato/Lato-Bold.ttf")
       format("truetype");
   font-weight: 700;
@@ -101,6 +101,15 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src:
+    local("MontserratSemiBold"),
+    url("assets/fonts/Montserrat/Montserrat-SemiBold.ttf")
+      format("truetype");
+  font-weight: 600;
+}
+
 .join-us input:focus-visible {
   outline: none;  
   background: linear-gradient(#000 0 0) padding-box, /*this is your grey background*/ linear-gradient(to right, #1882CF, #1882CF) border-box;
@@ -123,7 +132,7 @@
 }
 
 .join-us button {
-  background: linear-gradient(to right, #1882CF, #7B2375);
+  background: linear-gradient(to right, #FA00FF, #FFC700);
 }
 
 
@@ -191,7 +200,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: calc(20px + 4 * (100vw /1280));
 }
 
 .number {
@@ -222,4 +230,160 @@
   font-size: 36px;
   opacity: 1;
   animation: slideAndFade 1.8s linear infinite;
+}
+
+.gaming-modes .swiper-button-next {
+  top: 160px;
+  color: #fff;
+}
+
+.gaming-modes .swiper-button-prev {
+  top: 160px;
+  color: #fff;
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+  top: 80px;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+
+  .gaming-modes .swiper-button-next {
+    right: 0px;
+  }
+
+  .swiper-button-next .swiper-button-prev {
+    left: 0px;
+  }
+
+  .about-us .swiper-button-next {
+    right: 70px;
+  }
+
+  .about-us .swiper-button-prev {
+    left: 70px;
+  }
+
+  .text-adptive-xl{
+    font-size: calc(36px + (12 + 12 * 0.7) * ((100vw - 626px) /1280));
+}
+
+  .text-adptive-l{
+    font-size: calc(16px + (16 + 16 * 0.7) * ((100vw - 626px) /1280));
+}
+}
+
+.test {
+  position: absolute;
+    top: -10px;
+    width: 1280px;
+    left: 50%;
+    /* left: 20px; */
+    margin: auto;
+    left: 50%;
+    /* top: 26%; */
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: -1;
+}
+
+
+.gradient-border {
+  position: relative;
+  padding: 1rem;
+  background: #0D0D0D;
+  border-radius: 8px; /* Скругленные углы */
+  box-shadow: S0px 37px #7C37D4; 
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: -2px; bottom: -2px; left: -2px; right: -2px;
+  background: linear-gradient(270deg, #C23CE6, #7C37D4);
+  z-index: -1;
+  background-size: 400% 400%;
+  animation: gradient-animation 10s ease infinite; /* Плавный переход */
+  border-radius: inherit; /* Скругленные углы для градиента */
+}
+
+
+
+
+.shadow-lg-center {
+  position: relative;
+}
+.shadow-lg-center-1::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 38%;
+  box-shadow: -1px -2px 30px 20px rgba(55, 61, 212, 0.5);
+  transition: box-shadow 0.3s ease;
+  z-index: -1;
+}
+.shadow-lg-center-1:hover::before {
+  box-shadow: -1px -2px 40px 30px rgba(55, 61, 212, 0.5);
+}
+
+.shadow-lg-center-2::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 38%;
+  box-shadow: -1px -2px 30px 20px rgba(255, 149, 1, 0.5);
+  transition: box-shadow 0.3s ease;
+  z-index: -1;
+}
+.shadow-lg-center-2:hover::before {
+  box-shadow: -1px -2px 40px 30px rgba(255, 149, 1, 0.5);
+}
+
+.shadow-lg-center-3::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 38%;
+  box-shadow: -1px -2px 30px 20px rgba(124, 55, 212, 0.5);
+  transition: box-shadow 0.3s ease;
+  z-index: -1;
+}
+.shadow-lg-center-3:hover::before {
+  box-shadow: -1px -2px 40px 30px rgba(124, 55, 212, 0.7);
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%; /* Начальное положение строки */
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
 }
