@@ -6,7 +6,7 @@ import Solana from '@/assets/svg/solana.svg?react';
 import Okx from '@/assets/svg/okx.svg?react';
 import Prime from '@/assets/svg/prime.svg?react';
 
-const images = Array.from({ length: 40 }, (_, index) => `/src/assets/png/rocket${index + 1}.png`);
+const images = Array.from({ length: 40 }, (_, index) => `/assets/png/rocket${index + 1}.png`);
 
 export const Rockets = () => {
   const [imageIndices, setImageIndices] = useState<number[]>([]);
@@ -47,7 +47,7 @@ export const Rockets = () => {
 
   return (
     <section className='relative flex flex-col items-center'>
-      <h2 className='text-7xl font-mont py-8 font-black text-center'>THE ROCKETS</h2>
+      <h2 className='md:text-7xl text-pink-regular text-5xl font-mont py-8 font-black text-center'>THE ROCKETS</h2>
       <p className='text-3xl font-mont gradient-text text-center font-light'>
         Ultimate 10,000 NFT-collection with rakeback<br />and passive earnings on OrbitonX platform.
       </p>

@@ -5,6 +5,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -26,6 +27,52 @@
 .nft .swiper-wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+@font-face {
+  font-family: "BaseNeue";
+  src:
+    local("BaseNeueRegular"),
+    url("assets/fonts/BaseNeue/BaseNeueTrial-Regular.ttf")
+      format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "BaseNeue";
+  src:
+    local("BaseNeueExtraBold"),
+    url("assets/fonts/BaseNeue/BaseNeueTrial-WideExtraBold.ttf")
+      format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "BaseNeue";
+  src:
+    local("BaseNeueTrialBlack"),
+    url("assets/fonts/BaseNeue/BaseNeueTrial-Black.ttf")
+      format("truetype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "BaseNeue";
+  src:
+    local("BaseNeueCondensedBold"),
+    url("assets/fonts/BaseNeue/BaseNeueTrial-CondensedBold.ttf")
+      format("truetype");
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: "BaseNeue";
+  src:
+    local("BaseNeueCondSemBd"),
+    url("assets/fonts/BaseNeue/BaseNeueTrial-CondSemBd.ttf")
+      format("truetype");
+  font-weight: 600;
 }
 
 @font-face {
@@ -110,6 +157,12 @@
   font-weight: 600;
 }
 
+.join-us input:focus {
+  outline: none;  
+  border: 1px solid #7301FF;
+  background: linear-gradient(#000 0 0) padding-box, /*this is your grey background*/ linear-gradient(to right, #1882CF, #1882CF) border-box;
+}
+
 .join-us input:focus-visible {
   outline: none;  
   background: linear-gradient(#000 0 0) padding-box, /*this is your grey background*/ linear-gradient(to right, #1882CF, #1882CF) border-box;
@@ -118,7 +171,7 @@
 .join-us input{
   color: #999999;
   border-radius: 25px;
-  background: linear-gradient(#000 0 0) padding-box, /*this is your grey background*/ linear-gradient(to right, #1882CF, #7B2375) border-box;
+  background: linear-gradient(#000 0 0) padding-box, /*this is your grey background*/ linear-gradient(to right, #85468B, #7B2375) border-box;
   color: #ffffffde;
   padding: 10px;
   border: 1px solid transparent;
@@ -136,7 +189,21 @@
 }
 
 header button {
-  background: linear-gradient(to right, #FA00FF, #FFC700);
+  background: linear-gradient(to right, #E601FF, #7301FF);
+}
+
+.thanks-text {
+  background: linear-gradient(275deg, #1aac1a -0.94%, #088908 103.69%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.error-text {
+  background: linear-gradient(275deg, #c25555 -0.94%, #d23232 103.69%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes shake {
@@ -297,7 +364,8 @@ header button {
   padding: 1rem;
   background: #0D0D0D;
   border-radius: 8px; /* Скругленные углы */
-  box-shadow: S0px 37px #7C37D4; 
+  box-shadow: 0 0px 37px #7C37D4;
+
 }
 
 .gradient-border::before {
@@ -312,6 +380,24 @@ header button {
 }
 
 
+
+
+.shadow-lg-center-4::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 38%;
+  box-shadow: -1px -2px 30px 20px rgba(55, 61, 212, 0.5);
+  transition: box-shadow 0.3s ease;
+  z-index: -1;
+}
+.shadow-lg-center-4:hover::before {
+  box-shadow: -1px -2px 40px 30px rgba(55, 61, 212, 0.5);
+}
 
 
 .shadow-lg-center {

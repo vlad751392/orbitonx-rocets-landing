@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import phone from '@/assets/png/phone_main.png';
+import phone_pumbbar from '@/assets/png/phone_main_pumbbar.png';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -29,17 +30,9 @@ const List: ListItem[] = [
   },
   {
     id: 2,
-    photo: phone,
+    photo: phone_pumbbar,
     reverse: true,
-    title: "<span class='gradient-text'>Trading mode</span> 💸",
-    role: "Founder",
-    description:
-      "GameFi memecoin copytrading and sniping mode. Owner creates real memecoin portfolios, users seat in his rocket and fly to the moon together. Memecoin is always a risk, but NFT rocket owner takes his fair share of commission for every flight. Wanna make organized degen trading? That’s your mode.",
-  },
-  {
-    id: 3,
-    photo: phone,
-    title: "<span class='gradient-text'>Pumping mode</span> 💥",
+    title: "<span class='gradient-text'>Pumpadur Mode</span> 💥",
     role: "Co-Founder",
     description:
       "NFT Holder can create memecoins, and take your first degenerate passengers on board to the moon easy with automatic pump",
@@ -64,7 +57,7 @@ export const GamingModes = () => {
 
   return (
     <section className='gaming-modes px-[58px]'>
-      <h2 className='font-mont font-black text-pink-regular text-3xl md:text-[44px] pb-12 pt-10'>Our 3 main gaming modes:</h2>
+      <h2 className='font-mont font-black text-pink-regular text-3xl md:text-[44px] pb-12 pt-10'>Our 2 main gaming modes:</h2>
       {isMobile ? (
         <Swiper
           navigation={true}
@@ -98,7 +91,7 @@ export const GamingModes = () => {
               </div>
               <div className='flex flex-col'>
                 <h3 className={cn('font-mont text-2xl', 'font-black',)} dangerouslySetInnerHTML={{ __html: item.title }} />
-                <p className={cn('font-lato font-light pt-4 leading-5 px-6')} dangerouslySetInnerHTML={{ __html: item.description }} />
+                <p className={cn('font-lato font-light pt-4 leading-5 md:px-6')} dangerouslySetInnerHTML={{ __html: item.description }} />
               </div>
             </SwiperSlide>
           )})}

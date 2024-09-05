@@ -90,7 +90,7 @@ axios.post( `${strapiURL}/api/orbiton-users-emails`, data1, {
 
   return (
     
-    <section className="join-us w-full sm:w-fit join-us flex items-center flex-col gap-6 mb-5 sm:mb-0">
+    <section className="join-us relative z-[1] w-full sm:w-fit join-us flex items-center flex-col gap-6 mb-5 sm:mb-0">
 
       {/* <Modal
         isOpen={modalIsOpen}
@@ -105,7 +105,7 @@ axios.post( `${strapiURL}/api/orbiton-users-emails`, data1, {
       <form onSubmit={handleSubmit(onSubmit)} className="flex justify-center items-center gap-2">
         <input
           type="text"
-          placeholder="e-mail"
+          placeholder="Type your e-mail here"
           {...register("Email", { required: true, pattern: /^\S+@\S+$/i })}
           className={cn("md:w-[435px] w-[233px]", {
             "invalid-input": errors.Email && formSubmitted,
@@ -120,10 +120,10 @@ axios.post( `${strapiURL}/api/orbiton-users-emails`, data1, {
           Join Now
         </button>
       </form>
-      {/* <div className="relative w-full min-h-[24px] justify-center flex">
-        {modalIsOpen &&<p className="pb-2.5 sm:pb-0 thanks-text font-neue">Thank you for request! We will contact with you.</p>}
-        {reqError &&<p className="pb-2.5 sm:pb-0 error-text font-neue">Your email is already exist</p>}
-      </div> */}
+      <div className="relative w-full min-h-[24px] justify-center flex">
+        {modalIsOpen &&<p className="fobt-bold pb-2.5 sm:pb-0 thanks-text font-mont">Thank you for request! We will contact with you.</p>}
+        {reqError &&<p className="fobt-bold pb-2.5 sm:pb-0 error-text font-mont">Your email is already exist</p>}
+      </div>
     </section>
     
   );

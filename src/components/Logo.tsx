@@ -10,7 +10,11 @@ interface Props {
 
 export const Logo : FC<Props> = ({ type }) => {
   return (
-    <section className="w-fit flex md:self-start md:items-center gap-3">
+    <section className={cn("w-fit flex gap-3", {
+      'self-start md:items-center pl-6 sm:pl-0 pb-4 sm:pb-0': type === 'header',
+      'items-center': type === 'footer'
+    }
+  )}>
       <img src={type === 'header' ? header_logo : footer_logo} alt="" className={cn(
           'w-[50px]',
           {

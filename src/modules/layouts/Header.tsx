@@ -32,14 +32,16 @@ const icons = [
 
 export const Header = () => {
   return (
-    <header className="flex container flex-col sm:flex-row justify-center sm:justify-between items-center pt-10 sm:px-12">
+    <header className="flex mx-auto container flex-col sm:justify-between sm:flex-row justify-center  items-center pt-10 sm:px-12">
       <Logo type="header"></Logo>
+      <a href="#banner">
       <button
           
           className="text-white font-semibold px-8 py-2.5 rounded-lg font-lato"
         >
-          Join Now
+          NFT Presale and AirDrop  
         </button>
+        </a>
       <img src={shine} className="test" alt="shine" />
       <SocialIcons hidden={false} config={icons} />
     </header>

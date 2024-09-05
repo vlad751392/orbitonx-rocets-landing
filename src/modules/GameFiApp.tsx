@@ -9,8 +9,10 @@ export const GameFiApp = () => {
 
             <h2 className="font-lato font-black text-[44px] text-pink-regular  pb-8 max-w-[720px] text-center">2,000,000+ users in the Telegram GameFi App</h2>
             <div className="flex flex-col md:flex-row items-center max-w-[665px] md:pl-[52px] gap-4 md:gap-[110px]">
+            <div className='shadow-lg-center-4 shadow-lg-center'>
                 <img src={Phone} className="h-[355px] w-[162px]" alt="" />
-                <div className="text-left font-lato gap-8 pt-3 md:px-0 px-6 flex flex-col items-center">
+                </div>
+                <div className="text-left font-lato md:w-[340px] gap-8 pt-3 md:px-0 px-6 flex flex-col items-center">
                     <h3 className="text-2xl md:self-start gradient-text">Trending Telegram DeFi App</h3>
                     <p>OrbitonX is a GameFi platform in the form of a Telegram Miniapp (tApp), where players compete with cryptocurrency portfolios in daily tournaments with large prize pools and earn rewards for accurate market movement predictions.</p>
                     <div className="font-light p-6 md:self-start flex flex-col gap-4 gradient-border justify-center items-center">
